@@ -74,6 +74,36 @@
     }
 
   }
+
+  footer {
+    background: linear-gradient(135deg, #d4af37, #f7e27c, #d4af37);
+    background-size: 200% 200%;
+    animation: metallic-shine 6s linear infinite;
+    color: #000;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+
+  footer a {
+    color: #000;
+  }
+
+  @keyframes metallic-shine {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 </style>
 
 
@@ -93,14 +123,14 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Our Services</a>
+            <a class="nav-link" href="service.html">Our Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active-link" href="works.html">Our Works</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact Us</a>
           </li>
@@ -124,7 +154,7 @@
 
   <div class="container" style="margin-top: 30px;">
     <nav>
-      <div class="nav nav-tabs  gap-2" id="nav-tab" role="tablist">
+      <div class="nav nav-tabs gap-2 justify-content-center" id="nav-tab" role="tablist">
         <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button"
           role="tab" aria-controls="nav-all" aria-selected="true">All</button>
         <button class="nav-link" id="nav-candid-tab" data-bs-toggle="tab" data-bs-target="#nav-candid" type="button"
@@ -134,51 +164,46 @@
         <button class="nav-link" id="nav-wedding-film-tab" data-bs-toggle="tab" data-bs-target="#nav-wedding-film"
           type="button" role="tab" aria-controls="nav-wedding-film" aria-selected="false">Wedding Films</button>
         <button class="nav-link" id="nav-ad-film-tab" data-bs-toggle="tab" data-bs-target="#nav-ad-film" type="button"
-          role="tab" aria-controls="nav-ad-film" aria-selected="false">Ad Films</button>
-        <button class="nav-link" id="nav-corporate-tab" data-bs-toggle="tab" data-bs-target="#nav-corporate"
-          type="button" role="tab" aria-controls="nav-corporate" aria-selected="false">Corporate Photos</button>
-        <button class="nav-link" id="nav-visual-tab" data-bs-toggle="tab" data-bs-target="#nav-visual" type="button"
-          role="tab" aria-controls="nav-visual" aria-selected="false">Visual Branding</button>
-        <button class="nav-link" id="nav-event-tab" data-bs-toggle="tab" data-bs-target="#nav-event" type="button"
-          role="tab" aria-controls="nav-event" aria-selected="false">Event Photos</button>
+          role="tab" aria-controls="nav-ad-film" aria-selected="false">Baby Shower</button>
       </div>
     </nav>
+
     <div class="tab-content" id="nav-tabContent">
       <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
 
         <div class="row mt-3">
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Maternity Shoot/Maternity.webp" class="img-fluid" alt="Maternity">
+            <img src="assests/images/Candid photos/001 (5).JPEG" class="img-fluid" alt="Maternity">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Maternity Shoot/Maternity 2.webp" class="img-fluid" alt="Maternity-2">
+            <img src="assests/images/Candid photos/001 (7).JPEG" class="img-fluid" alt="Maternity-2">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Maternity Shoot/Maternity 3.webp" class="img-fluid" alt="">
-          </div>
-        </div>
-
-        <div class="row mt-3">
-          <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Baby Shower/Baby Shower.webp" class="img-fluid" alt="Maternity">
-          </div>
-          <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Baby Shower/Baby Shower 2.webp" class="img-fluid" alt="Maternity-2">
-          </div>
-          <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Baby Shower/Baby Shower 3.webp" class="img-fluid" alt="">
+            <img src="assests/images/Candid photos/001 (8).JPEG" class="img-fluid" alt="">
           </div>
         </div>
 
         <div class="row mt-3">
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Birthday Shoot/Baby Shoot 1.webp" class="img-fluid" alt="Baby-shoot">
+            <img src="assests/images/Candid photos/01 2.JPEG" class="img-fluid" alt="Maternity">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Birthday Shoot/Baby Shoot 2.webp" class="img-fluid" alt="Baby-shoot">
+            <img src="assests/images/Candid photos/01 4.JPG" class="img-fluid" alt="Maternity-2">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Birthday Shoot/Baby Shoot 3.webp" class="img-fluid" alt="Baby-shoot">
+            <img src="assests/images/Candid photos/01 8.JPG" class="img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-12 col-md-4 mb-3">
+            <img src="assests/images/Candid photos/02 13.JPG" class="img-fluid" alt="Baby-shoot">
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <img src="assests/images/Candid photos/03 11.JPG" class="img-fluid" alt="Baby-shoot">
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <img src="assests/images/Candid photos/06 10.JPG" class="img-fluid" alt="Baby-shoot">
           </div>
         </div>
 
@@ -188,26 +213,26 @@
       <div class="tab-pane fade" id="nav-candid" role="tabpanel" aria-labelledby="nav-candid-tab">
         <div class="row mt-3">
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Pre & Post Wedding/Pre Wed.webp" class="img-fluid" alt="Pre Wedding">
+            <img src="assests/images/Candid photos/IMG_4513.JPG" class="img-fluid" alt="Pre Wedding">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Couples Shoot/Couple.webp" class="img-fluid couple" alt="Couple Shoot">
+            <img src="assests/images/Candid photos/IMG_4510.JPG" class="img-fluid couple" alt="Couple Shoot">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Couples Shoot/Couple 2.webp" class="img-fluid couple-2" alt="Couple Shoot 2">
+            <img src="assests/images/Candid photos/IMG_4518.JPG" class="img-fluid couple-2" alt="Couple Shoot 2">
           </div>
         </div>
 
         <div class="row mt-3">
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Couples Shoot/Candid-2.webp" class="img-fluid" alt="Pre Wedding">
+            <img src="assests/images/Candid photos/06 6.JPG" class="img-fluid" alt="Pre Wedding">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Couples Shoot/Candid-3.webp" class="img-fluid" alt="Couple Shoot">
+            <img src="assests/images/Candid photos/DSC01599.JPG" class="img-fluid" alt="Couple Shoot">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Couples Shoot/Candid-4.webp" class="img-fluid" alt="Couple Shoot">
-            
+            <img src="assests/images/Candid photos/01b.JPG" class="img-fluid" alt="Couple Shoot">
+
           </div>
         </div>
 
@@ -216,37 +241,37 @@
       <div class="tab-pane fade" id="nav-wedding-photos" role="tabpanel" aria-labelledby="nav-wedding-photos-tab">
         <div class="row mt-3">
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Couples Shoot/Wedding Pic.webp" class="img-fluid" alt="Wedding-Pic">
+            <img src="assests/images/Candid photos/001 (1).JPEG" class="img-fluid" alt="Wedding-Pic">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Couples Shoot/Wedding Pic 2.webp" class="img-fluid couple" alt="Wedding-Pics">
+            <img src="assests/images/Candid photos/08 3.JPG" class="img-fluid couple" alt="Wedding-Pics">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Couples Shoot/Wedding-Pic 3.webp" class="img-fluid couple" alt="Wedding-Pics">
+            <img src="assests/images/Candid photos/13.JPG" class="img-fluid couple" alt="Wedding-Pics">
 
           </div>
         </div>
         <div class="row mt-3">
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Couples Shoot/Wedding Pic 4.webp" class="img-fluid" alt="Wedding-Pics">
+            <img src="assests/images/Candid photos/03 10.JPG" class="img-fluid" alt="Wedding-Pics">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Couples Shoot/Wedding Pic 5.webp" class="img-fluid" alt="Wedding-Pics">
+            <img src="assests/images/Candid photos/02 5.JPG" class="img-fluid" alt="Wedding-Pics">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Couples Shoot/Wedding Pic 6.webp" class="img-fluid" alt="Wedding-Pics">
+            <img src="assests/images/Candid photos/DSC01722.JPG" class="img-fluid" alt="Wedding-Pics">
 
           </div>
         </div>
         <div class="row mt-3">
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Couples Shoot/Wedding Pic 7.webp" class="img-fluid" alt="Wedding-Pics">
+            <img src="assests/images/Candid photos/01 7.JPG" class="img-fluid" alt="Wedding-Pics">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Couples Shoot/Wedding Pic 8.webp" class="img-fluid" alt="Wedding-Pics">
+            <img src="assests/images/Candid photos/01.JPEG" class="img-fluid" alt="Wedding-Pics">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Couples Shoot/Wedding Pic 9.webp" class="img-fluid" alt="">
+            <img src="assests/images/Candid photos/10.JPEG" class="img-fluid" alt="">
 
 
           </div>
@@ -257,37 +282,89 @@
       <div class="tab-pane fade" id="nav-wedding-film" role="tabpanel" aria-labelledby="nav-wedding-film-tab">
         <div class="row mt-3">
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Wedding Film/Wedding-1.webp" class="img-fluid" alt="Wedding-Pics">
+            <img src="assests/images/Candid photos/08 4.JPG" class="img-fluid" alt="Wedding-Pics">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Wedding Film/Wedding.webp" class="img-fluid" alt="Wedding-Pics">
+            <img src="assests/images/Candid photos/02 6.JPG" class="img-fluid" alt="Wedding-Pics">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Wedding Film/Wedding-2.webp" class="img-fluid" alt="Wedding-Pics">
+            <img src="assests/images/Candid photos/07 3.JPG" class="img-fluid" alt="Wedding-Pics">
 
           </div>
         </div>
 
         <div class="row mt-3">
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Wedding Film/Wedding-3.webp" class="img-fluid" alt="Wedding-Pics">
+            <img src="assests/images/Candid photos/DSC08243.JPG" class="img-fluid" alt="Wedding-Pics">
           </div>
           <div class="col-12 col-md-4 mb-3">
-            <img src="assests/images/Wedding Film/Wedding-4.webp" class="img-fluid" alt="Wedding-Pics">
+            <img src="assests/images/Candid photos/DSC00685.JPG" class="img-fluid" alt="Wedding-Pics">
           </div>
           <div class="col-12 col-md-4 mb-3">
-           <img src="assests/images/Wedding Film/Wedding-5.webp" class="img-fluid" alt="Wedding-Pics">
+            <img src="assests/images/Candid photos/DSC07575.JPG" class="img-fluid" alt="Wedding-Pics">
+
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-12 col-md-4 mb-3">
+            <img src="assests/images/Candid photos/03 3.JPG" class="img-fluid" alt="Wedding-Pics">
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <img src="assests/images/Candid photos/10.JPG" class="img-fluid" alt="Wedding-Pics">
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <img src="assests/images/Candid photos/08.JPG" class="img-fluid" alt="Wedding-Pics">
 
           </div>
         </div>
 
 
+
       </div>
       <div class="tab-pane fade" id="nav-ad-film" role="tabpanel" aria-labelledby="nav-ad-film-tab">
+        <div class="row mt-3">
+          <div class="col-12 col-md-4 mb-3">
+            <img src="assests/images/Candid photos/09 4.JPG" class="img-fluid" alt="Wedding-Pics">
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <img src="assests/images/Candid photos/07 6.JPG" class="img-fluid" alt="Wedding-Pics">
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <img src="assests/images/Candid photos/08 7.JPG" class="img-fluid" alt="Wedding-Pics">
 
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-12 col-md-4 mb-3">
+            <img src="assests/images/Candid photos/IMG_4662.JPG" class="img-fluid" alt="Wedding-Pics">
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <img src="assests/images/Candid photos/IMG_4664.JPG" class="img-fluid" alt="Wedding-Pics">
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <img src="assests/images/Candid photos/IMG_4666.JPG" class="img-fluid" alt="Wedding-Pics">
+
+          </div>
+        </div>
+
+         <div class="row mt-3">
+          <div class="col-12 col-md-4 mb-3">
+            <img src="assests/images/Candid photos/03 9.JPG" class="img-fluid" alt="Wedding-Pics">
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <img src="assests/images/Candid photos/04 8.JPG" class="img-fluid" alt="Wedding-Pics">
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <img src="assests/images/Candid photos/05 9.JPG" class="img-fluid" alt="Wedding-Pics">
+
+          </div>
+        </div>
 
       </div>
       <div class="tab-pane fade" id="nav-corporate" role="tabpanel" aria-labelledby="nav-corporate-tab">
+
 
 
       </div>
@@ -319,7 +396,7 @@
           <h5>Quick Links</h5>
           <ul class="list-unstyled">
             <li class="footer-link"><a href="index.html" class="text-uppercase">Home</a></li>
-            <li class="footer-link"><a href="services.html" class="text-uppercase">Our Services</a></li>
+            <li class="footer-link"><a href="service.html" class="text-uppercase">Our Services</a></li>
             <li class="footer-link active-link"><a href="works.html" class="text-uppercase active-link">Our Works</a>
             </li>
             <li class="footer-link"><a href="gallery.html" class="text-uppercase">Gallery</a></li>
@@ -340,7 +417,7 @@
 
       <div class="row mt-5">
         <div class="col-12 d-flex justify-content-center">
-          <p class="copy">© 2025 <span class="memory">Timeline Studios.</span> All rights reserved.</p>
+          <p class="copy">© 2025 Timeline Studios All rights reserved.</p>
 
         </div>
 

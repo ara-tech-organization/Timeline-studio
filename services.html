@@ -17,21 +17,27 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <style>
-  .foot-text {
-    width: 75%;
-  }
+   footer {
+  background: linear-gradient(135deg, #d4af37, #f7e27c, #d4af37);
+  background-size: 200% 200%;
+  animation: metallic-shine 6s linear infinite;
+  color: #000;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
 
-  @media (max-width: 576px) {
-    .foot-text {
-      width: 100% !important;
-    }
+footer a{
+  color: #000;
+}
 
-    .copy {
-      font-size: 14px;
-    }
-
-
-  }
+@keyframes metallic-shine {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 </style>
 
 <body>
@@ -50,14 +56,14 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active-link" href="services.html">Our Services</a>
+            <a class="nav-link active-link" href="service.html">Our Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="works.html">Our Works</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact Us</a>
           </li>
@@ -166,7 +172,7 @@
           <h5>Quick Links</h5>
           <ul class="list-unstyled">
             <li class="footer-link"><a href="index.html" class="text-uppercase">Home</a></li>
-            <li class="footer-link active-link"><a href="services.html" class="text-uppercase active-link">Our
+            <li class="footer-link active-link"><a href="service.html" class="text-uppercase active-link">Our
                 Services</a></li>
             <li class="footer-link"><a href="works.html" class="text-uppercase">Our Works</a></li>
             <li class="footer-link"><a href="gallery.html" class="text-uppercase">Gallery</a></li>
@@ -187,7 +193,7 @@
 
       <div class="row mt-5">
         <div class="col-12 d-flex justify-content-center">
-          <p class="copy">© 2025 <span class="memory">Timeline Studios.</span> All rights reserved.</p>
+          <p class="copy">© 2025 Timeline Studios All rights reserved.</p>
 
         </div>
 
