@@ -80,16 +80,24 @@
 <body>
   <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="assests/images/Time Line Logo.png" class="img-fluid"
-          width="80px" /></a>
+      <a class="navbar-brand" href="index.html">
+        <!-- Desktop logo (≥768px) -->
+        <img src="assests/images/Timeline Studio.png" class="img-fluid logo-desktop" width="100px" alt="Logo Desktop">
+
+        <!-- Mobile logo (<768px) -->
+        <img src="assests/images/Timeline Studio Logo 02.png" class="img-fluid logo-mobile" width="70"
+          alt="Logo Mobile">
+      </a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon my-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto text-uppercase">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="service.html">Our Services</a>
@@ -97,11 +105,8 @@
           <li class="nav-item">
             <a class="nav-link" href="works.html">Our Works</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li> -->
           <li class="nav-item">
-            <a class="nav-link active-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="contact.html">Contact Us</a>
           </li>
         </ul>
       </div>

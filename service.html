@@ -21,6 +21,29 @@
       overflow-x: hidden !important;
     }
 
+    /* Default desktop logo size */
+.logo-desktop {
+  width: 160px; /* increase size here */
+  max-width: 100%;
+}
+
+/* Mobile logo (unchanged) */
+.logo-mobile {
+  display: none;
+  width: 90px;
+}
+
+/* Show/hide depending on screen size */
+@media (max-width: 767.98px) {
+  .logo-desktop {
+    display: none;
+  }
+  .logo-mobile {
+    display: inline-block;
+  }
+}
+
+
     .hero {
       position: relative;
       height: 80vh;
@@ -339,17 +362,17 @@
       color: #fabc37 !important;
     }
 
-   .footer-link .active-link {
-    color:  #000 !important;
-}
+    .footer-link .active-link {
+      color: #000 !important;
+    }
 
-footer .list-unstyled li {
-    padding: 7px 0;
-}
+    footer .list-unstyled li {
+      padding: 7px 0;
+    }
 
-.social a {
-    padding: 7px 0;
-}
+    .social a {
+      padding: 7px 0;
+    }
 
 
     .footer-link a {
@@ -391,7 +414,7 @@ footer .list-unstyled li {
 
 
 
-     footer {
+    footer {
       background: #fabc37;
       background-size: 200% 200%;
       animation: metallic-shine 6s linear infinite;
@@ -475,7 +498,12 @@ footer .list-unstyled li {
   <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="assests/images/Time Line Logo.png" class="img-fluid" width="80px" alt="Logo">
+        <!-- Desktop logo (≥768px) -->
+        <img src="assests/images/Timeline Studio.png" class="img-fluid logo-desktop" width="100px" alt="Logo Desktop">
+
+        <!-- Mobile logo (<768px) -->
+        <img src="assests/images/Timeline Studio Logo 02.png" class="img-fluid logo-mobile" width="70"
+          alt="Logo Mobile">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -486,17 +514,14 @@ footer .list-unstyled li {
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto text-uppercase">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active-link" href="service.html">Our Services</a>
+            <a class="nav-link" href="service.html">Our Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="works.html">Our Works</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact Us</a>
           </li>
@@ -504,6 +529,7 @@ footer .list-unstyled li {
       </div>
     </div>
   </nav>
+
   <!-- Hero Section -->
   <section class="hero" data-aos="fade-down">
     <div class="hero-content">
@@ -716,12 +742,12 @@ footer .list-unstyled li {
 
     </div>
 
-    
-      <div class="row bg-black text-white py-3">
-  <div class="col-12 d-flex justify-content-center">
-    <p class="copy mb-0">© 2025 Timeline Studios. All rights reserved.</p>
-  </div>
-</div>
+
+    <div class="row bg-black text-white py-3">
+      <div class="col-12 d-flex justify-content-center">
+        <p class="copy mb-0">© 2025 Timeline Studios. All rights reserved.</p>
+      </div>
+    </div>
 
   </footer>
 

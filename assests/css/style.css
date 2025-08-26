@@ -15,6 +15,30 @@ body {
     color: white;
 }
 
+/* Default desktop logo size */
+.logo-desktop {
+  width: 160px; /* increase size here */
+  max-width: 100%;
+}
+
+/* Mobile logo (unchanged) */
+.logo-mobile {
+  display: none;
+  width: 90px;
+}
+
+/* Show/hide depending on screen size */
+@media (max-width: 767.98px) {
+  .logo-desktop {
+    display: none;
+  }
+  .logo-mobile {
+    display: inline-block;
+  }
+}
+
+
+
 .nav-item .active-link {
     color:  #fabc37 !important;
 }
