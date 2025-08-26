@@ -270,51 +270,16 @@ footer .list-unstyled li {
 
 }
 
-.logos {
-    overflow: hidden;
-    padding: 100px 0px;
-    white-space: nowrap;
-    position: relative;
+.client-logo {
+  max-height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
-.logos:before,
-.logos:after {
-    position: absolute;
-    top: 0;
-    content: '';
-    width: 250px;
-    height: 100%;
-    z-index: 2;
+.client-logo:hover {
+  transform: scale(1.05); /* subtle hover zoom */
 }
 
-.logos:before {
-    left: 0;
-
-}
-
-.logos:after {
-    right: 0;
-
-}
-
-.logo_items {
-    display: inline-block;
-    animation: 15s slides infinite linear;
-}
-
-.logo_items img {
-    height: 80px;
-}
-
-@keyframes slides {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
 
 .chat img {
     position: fixed;

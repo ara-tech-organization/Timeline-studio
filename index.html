@@ -16,8 +16,9 @@
 
   <style>
     .carousel-container {
-      border-radius: 15px;
+      border-radius: 10px;
       background: linear-gradient(135deg, #ffffff, #fefefed3);
+      /* background-color: red; */
       overflow: hidden;
     }
 
@@ -39,16 +40,39 @@
       background-color: #6c757d;
     }
 
+
+
     .carousel-indicators .active {
-      background-color:  #fabc37;
+      background-color: #fabc37;
       /* elegant pink highlight */
     }
 
-    .custom-arrow {
+    /* Custom arrow icon style */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
       filter: invert(1) grayscale(100);
+      /* white style */
       width: 40px;
       height: 40px;
     }
+
+    /* Position left arrow */
+    .carousel-control-prev {
+      left: -100px;
+      /* move further left (negative goes outside carousel) */
+      top: 50%;
+      /* keep vertically centered */
+      transform: translateY(-50%);
+    }
+
+    /* Position right arrow */
+    .carousel-control-next {
+      right: -100px;
+      /* move further right */
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
 
     h1 {
       color: #fabc37;
@@ -165,7 +189,7 @@
     }
 
     .nav-pills .nav-link:hover {
-      background-color: rgba(255, 238, 0, 0.2);
+      background-color: #fff;
       color: #000;
     }
 
@@ -200,90 +224,127 @@
     }
 
     .testimonial-section {
-  position: relative;
-}
+      position: relative;
+    }
 
-.testimonial-card {
-  background: linear-gradient(135deg, #ffffff, #f8f9fa);
-  padding: 2rem 1.5rem;
-  border-radius: 20px;
-  box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
-  text-align: center;
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
-}
+    .testimonial-card {
+      background: linear-gradient(135deg, #ffffff, #f8f9fa);
+      padding: 2rem 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+    }
 
-.testimonial-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0px 12px 25px rgba(0,0,0,0.15);
-}
+    .testimonial-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+    }
 
-.testimonial-card .circle {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: -50px auto 15px;
-  border: 4px solid #fff;
-  box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
-}
+    .testimonial-card .circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: -50px auto 15px;
+      border: 4px solid #fff;
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    }
 
-.testimonial-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+    .testimonial-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-.testimonial-card p {
-  font-size: 1.05rem;
-  color: #555;
-  margin-bottom: 1rem;
-}
+    .testimonial-card p {
+      font-size: 1.05rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
 
-.testimonial-card h6 {
-  font-weight: 600;
-  color: #222;
-  margin-bottom: 0.5rem;
-}
+    .testimonial-card h6 {
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
 
-.testimonial-card span {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #c59d5f; /* accent color */
-}
+    .testimonial-card span {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #c59d5f;
+      /* accent color */
+    }
 
-.custom-arrow {
-  font-size: 2rem;
-  color: #fff;
-  /* background: #c59d5f; */
-  border-radius: 50%;
-  padding: 8px 14px;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
-}
+    .custom-arrow {
+      font-size: 2rem;
+      color: #fff;
+      /* background: #c59d5f; */
+      border-radius: 50%;
+      padding: 8px 14px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
 
 
-   footer {
-  background: linear-gradient(135deg, #d4af37, #f7e27c, #d4af37);
-  background-size: 200% 200%;
-  animation: metallic-shine 6s linear infinite;
-  color: #000;
-  text-align: center;
-  padding: 40px 20px;
-  font-family: "Poppins", sans-serif;
-  position: relative;
-  overflow: hidden;
-}
+    footer {
+      background: #fabc37;
+      background-size: 200% 200%;
+      animation: metallic-shine 6s linear infinite;
+      color: #000;
+      text-align: center;
+      padding: 0px 0px;
+      font-family: "Poppins", sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
 
-footer a{
-  color: #000;
-}
+    footer a {
+      color: #000;
+    }
 
-@keyframes metallic-shine {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+    .footer-link a {
+      position: relative;
+      text-decoration: none;
+      /* remove default underline */
+      color: inherit;
+      /* keep text color */
+      transition: color 0.3s ease;
+    }
+
+    /* underline effect */
+    .footer-link a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      /* thickness of underline */
+      background-color: #000;
+      /* change to your footer link color */
+      transition: width 0.4s ease;
+    }
+
+    .footer-link a:hover::after {
+      width: 100%;
+    }
+
+
+    @keyframes metallic-shine {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
   </style>
 </head>
 
@@ -325,7 +386,7 @@ footer a{
   <div class="container py-5 text-center" data-aos="fade-up">
     <!-- Heading & Subheading -->
     <h1 class="fw-bold display-5 mb-4">Capturing your wedding's magic,<br>one moment at a time</h1>
-    <h5 class="mb-4">Capturing the love,joy, and magic of your wedding day,preserving timeless memories to cherish
+    <h5 class="mb-4">Capturing the love,joy and magic of your wedding day, <br>preserving timeless memories to cherish
       forever</h5>
 
     <!-- Curved Carousel Container -->
@@ -401,14 +462,14 @@ footer a{
   </div>
 
 
-  <div class="container py-5" data-aos="fade-up">
+  <div class="container py-5" data-aos="fade-up" style="margin-top:150px">
     <!-- Heading Section -->
     <div class="text-center mb-5">
       <h2 class="fw-semibold display-5">Welcome to <span class="highlight">Timeline Studio</span></h2>
       <h2 class="memory fw-bold display-6">Where Every Frame Tells a Story</h2>
       <p class="fs-6 text-center mt-3">
         At Timeline Studio, we bring your moments to life with creativity, precision, and a touch of magic.
-        From weddings to corporate events, candid shots to cinematic videography,
+        From weddings to corporate events, <br>candid shots to cinematic videography,
         we craft memories you'll cherish forever.
       </p>
     </div>
@@ -436,7 +497,7 @@ footer a{
         </ul>
 
         <!-- Tab Content -->
-        <div class="tab-content p-4 rounded shadow-sm" id="aboutTabContent">
+        <div class="tab-content rounded shadow-sm" id="aboutTabContent">
           <div class="tab-pane fade show active" id="style" role="tabpanel">
             <p>
               Welcome to Timeline Studio, where passion meets creativity. Our team of skilled
@@ -469,7 +530,7 @@ footer a{
             <img src="assests/images/Candid photos/03 11.JPG" alt="My Style" class="img-fluid rounded-4 shadow">
           </div>
           <div class="tab-pane fade" id="mission-img" role="tabpanel">
-            <img src="assests/images/Candid photos/10.JPEG" alt="Mission" class="img-fluid rounded-4 shadow">
+            <img src="assests/images/Candid photos/08 6.JPG" alt="Mission" class="img-fluid rounded-4 shadow">
           </div>
           <div class="tab-pane fade" id="vision-img" role="tabpanel">
             <img src="assests/images/Candid photos/IMG_4584.JPG" alt="Vision" class="img-fluid rounded-4 shadow">
@@ -485,7 +546,7 @@ footer a{
     <div class="row g-5 my-3">
       <div class="col-md-4">
         <div class="img-container">
-          <img src="assests/images/Latest works/Wedding pic.webp" alt="" class="img-fluid">
+          <img src="assests/images/Candid photos/001 (8).JPEG" alt="" class="img-fluid">
           <p class="overlay-text">Wedding</p>
         </div>
 
@@ -493,7 +554,7 @@ footer a{
       </div>
       <div class="col-md-4">
         <div class="img-container">
-          <img src="assests/images/Latest works/Reception.webp" alt="" class="img-fluid">
+          <img src="assests/images/Candid photos/02 6.JPG" alt="" class="img-fluid">
           <p class="overlay-text">Reception</p>
         </div>
 
@@ -521,7 +582,7 @@ footer a{
       </div>
       <div class="col-md-4">
         <div class="img-container">
-          <img src="assests/images/Candid photos/04 8.JPG" alt="" style="height: 451.7px;" class="baby-show">
+          <img src="assests/images/Candid photos/03 9.JPG" alt="" style="height: 451.7px;" class="baby-show">
           <p class="overlay-text">Baby Shower</p>
         </div>
 
@@ -564,21 +625,28 @@ footer a{
 
   </div>
 
-  <div class="container" style="margin-top: 60px;" data-aos="fade-up">
-    <h2 class="text-center mt-3 fw-bold display-5">Our <span class="memory">Clients</span></h2>
-    <div class="row">
-      <div class="logos">
-        <div class="logo_items">
-          <img src="assests/images/Propel Logo.png" alt="" class="img-fluid m-3">
-          <img src="assests/images/kobelco-logo-Green.png" alt="" class="img-fluid m-3">
-          <img src="assests/images/Fit Kannamma logo.png" alt="" class="img-fluid m-3">
-          <img src="assests/images/Just Salwars logo.avif" alt="" class="img-fluid m-3">
-          <img src="assests/images/Mr DJ Logo.jpg" alt="" class="img-fluid m-3">
-          <img src="assests/images/manna mess logo (2).jpg" alt="" class="img-fluid m-3">
-
-
-        </div>
-
+  <div class="container" style="margin-top: 150px;" data-aos="fade-up">
+    <h2 class="text-center mt-3 fw-bold display-5">
+      Our <span class="memory">Clients</span>
+    </h2>
+    <div class="row justify-content-center align-items-center g-4 mt-4">
+      <div class="col-6 col-md-4 col-lg-2 text-center">
+        <img src="assests/images/Propel Logo.png" alt="Propel" class="img-fluid client-logo">
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 text-center">
+        <img src="assests/images/kobelco-logo-Green.png" alt="Kobelco" class="img-fluid client-logo">
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 text-center">
+        <img src="assests/images/Fit Kannamma logo.png" alt="Fit Kannamma" class="img-fluid client-logo">
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 text-center">
+        <img src="assests/images/Just Salwars logo.avif" alt="Just Salwars" class="img-fluid client-logo">
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 text-center">
+        <img src="assests/images/Mr DJ Logo.jpg" alt="Mr DJ" class="img-fluid client-logo">
+      </div>
+      <div class="col-6 col-md-4 col-lg-2 text-center">
+        <img src="assests/images/manna mess logo (2).jpg" alt="Manna Mess" class="img-fluid client-logo">
       </div>
     </div>
   </div>
@@ -591,7 +659,7 @@ footer a{
       <!-- FAQ Section -->
       <div class="col-lg-6">
         <h2 class="display-5 fw-bold mb-4">
-          What You Need to Know <br> About <span style="color:#ffee00">Us</span>
+          What You Need to Know <br> <span style="color:#fabc37">About Us</span>
         </h2>
 
         <div class="accordion custom-accordion" id="faqAccordion">
@@ -705,100 +773,100 @@ footer a{
 
 
   <div class="container testimonial-section" data-aos="fade-up">
-  <div class="text-center" style="margin-top: 60px;">
-    <h5 class="fw-bold display-5">Our <span class="memory">Client Says</span></h5>
-  </div>
-
-  <!-- Desktop Grid -->
-  <div class="row my-5 g-4 testimonial d-none d-lg-flex">
-    <div class="col-lg-4 col-md-6">
-      <div class="testimonial-card">
-        <div class="circle">
-          <img src="assests/images/5907.jpg" class="img-fluid" alt="">
-        </div>
-        <p>"Timeline Studio captured every moment of our wedding beautifully. The team was
-          professional, attentive, and the photos turned out better than we could have imagined."</p>
-        <h6>"Absolutely amazing experience!"</h6>
-        <span>Priya & Arun</span>
-      </div>
+    <div class="text-center" style="margin-top: 60px;">
+      <h5 class="fw-bold display-5">Our <span class="memory">Client Says</span></h5>
     </div>
 
-    <div class="col-lg-4 col-md-6">
-      <div class="testimonial-card">
-        <div class="circle">
-          <img src="assests/images/5907.jpg" class="img-fluid" alt="">
-        </div>
-        <p>"The professionalism and attention to detail at Timeline Studio is unmatched.
-          Their photography style is elegant and timeless."</p>
-        <h6>"Highly recommend their services!"</h6>
-        <span>Vijay & Aarti</span>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6">
-      <div class="testimonial-card">
-        <div class="circle">
-          <img src="assests/images/5907.jpg" class="img-fluid" alt="">
-        </div>
-        <p>"The wedding film Timeline Studio created for us was nothing short magical.
-          They took the time to understand our story and turned it into a cinematic masterpiece."</p>
-        <h6>"A truly cinematic experience!"</h6>
-        <span>Raj & Sneha</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Mobile Carousel -->
-  <div id="testimonialCarousel" class="carousel slide d-lg-none" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="testimonial-card text-center">
+    <!-- Desktop Grid -->
+    <div class="row my-5 g-4 testimonial d-none d-lg-flex">
+      <div class="col-lg-4 col-md-6">
+        <div class="testimonial-card">
           <div class="circle">
             <img src="assests/images/5907.jpg" class="img-fluid" alt="">
           </div>
           <p>"Timeline Studio captured every moment of our wedding beautifully. The team was
-            professional and attentive."</p>
+            professional, attentive, and the photos turned out better than we could have imagined."</p>
           <h6>"Absolutely amazing experience!"</h6>
           <span>Priya & Arun</span>
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="testimonial-card text-center">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="testimonial-card">
           <div class="circle">
             <img src="assests/images/5907.jpg" class="img-fluid" alt="">
           </div>
-          <p>"The professionalism and attention to detail at Timeline Studio is unmatched."</p>
+          <p>"The professionalism and attention to detail at Timeline Studio is unmatched.
+            Their photography style is elegant and timeless."</p>
           <h6>"Highly recommend their services!"</h6>
           <span>Vijay & Aarti</span>
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="testimonial-card text-center">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="testimonial-card">
           <div class="circle">
             <img src="assests/images/5907.jpg" class="img-fluid" alt="">
           </div>
-          <p>"The wedding film Timeline Studio created for us was nothing short magical."</p>
+          <p>"The wedding film Timeline Studio created for us was nothing short magical.
+            They took the time to understand our story and turned it into a cinematic masterpiece."</p>
           <h6>"A truly cinematic experience!"</h6>
           <span>Raj & Sneha</span>
         </div>
       </div>
     </div>
 
-    <!-- Custom Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-      <span class="custom-arrow">&#10094;</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-      <span class="custom-arrow">&#10095;</span>
-    </button>
+    <!-- Mobile Carousel -->
+    <div id="testimonialCarousel" class="carousel slide d-lg-none" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="testimonial-card text-center">
+            <div class="circle">
+              <img src="assests/images/5907.jpg" class="img-fluid" alt="">
+            </div>
+            <p>"Timeline Studio captured every moment of our wedding beautifully. The team was
+              professional and attentive."</p>
+            <h6>"Absolutely amazing experience!"</h6>
+            <span>Priya & Arun</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-card text-center">
+            <div class="circle">
+              <img src="assests/images/5907.jpg" class="img-fluid" alt="">
+            </div>
+            <p>"The professionalism and attention to detail at Timeline Studio is unmatched."</p>
+            <h6>"Highly recommend their services!"</h6>
+            <span>Vijay & Aarti</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-card text-center">
+            <div class="circle">
+              <img src="assests/images/5907.jpg" class="img-fluid" alt="">
+            </div>
+            <p>"The wedding film Timeline Studio created for us was nothing short magical."</p>
+            <h6>"A truly cinematic experience!"</h6>
+            <span>Raj & Sneha</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="custom-arrow">&#10094;</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="custom-arrow">&#10095;</span>
+      </button>
+    </div>
   </div>
-</div>
 
 
 
 
-  <footer class="footer p-4" style="margin-top: 40px;" data-aos="fade-up">
-    <div class="container">
+  <footer class="footer" style="margin-top: 40px;" data-aos="fade-up">
+    <div class="container py-4 px-4">
       <div class="row">
         <div class="col-lg-6 col-md-6 text-center text-md-start">
           <img src="assests/images/Time Line Logo.png" alt="" class="img-fluid" width="90px">
@@ -814,7 +882,7 @@ footer a{
             <li class="footer-link active-link"><a href="index.html" class="text-uppercase active-link">Home</a></li>
             <li class="footer-link active-link"><a href="service.html" class="text-uppercase">Our Services</a></li>
             <li class="footer-link"><a href="works.html" class="text-uppercase">Our Works</a></li>
-            <li class="footer-link"><a href="gallery.html" class="text-uppercase">Gallery</a></li>
+            <!-- <li class="footer-link"><a href="gallery.html" class="text-uppercase">Gallery</a></li> -->
             <li class="footer-link"><a href="contact.html" class="text-uppercase">Contact Us</a></li>
           </ul>
         </div>
@@ -830,16 +898,14 @@ footer a{
         </div>
       </div>
 
-      <div class="row mt-5">
-        <div class="col-12 d-flex justify-content-center">
-          <p class="copy">© 2025 Timeline Studios.</span> All rights reserved.</p>
-
-        </div>
-
-      </div>
-
-
     </div>
+
+    
+      <div class="row bg-black text-white py-3">
+  <div class="col-12 d-flex justify-content-center">
+    <p class="copy mb-0">© 2025 Timeline Studios. All rights reserved.</p>
+  </div>
+</div>
 
   </footer>
 

@@ -271,14 +271,13 @@
     }
 
     .cta-section {
-      background: linear-gradient(135deg, #1f1f1f, #2e2e2e, #3b3b3b, #1a1a1a);
+      /* background: linear-gradient(135deg, #1f1f1f, #2e2e2e, #3b3b3b, #1a1a1a); */
       background-size: 400% 400%;
       animation: metallic-shine 8s ease infinite;
       color: #fff;
       min-height: 250px;
       padding: 60px 40px;
       text-align: center;
-
       /* Centering & boxing */
       max-width: 1500px;
       /* adjust to taste */
@@ -392,13 +391,13 @@ footer .list-unstyled li {
 
 
 
-    footer {
-      background: linear-gradient(135deg, #d4af37, #f7e27c, #d4af37);
+     footer {
+      background: #fabc37;
       background-size: 200% 200%;
       animation: metallic-shine 6s linear infinite;
       color: #000;
       text-align: center;
-      padding: 40px 20px;
+      padding: 0px 0px;
       font-family: "Poppins", sans-serif;
       position: relative;
       overflow: hidden;
@@ -407,6 +406,34 @@ footer .list-unstyled li {
     footer a {
       color: #000;
     }
+
+    .footer-link a {
+      position: relative;
+      text-decoration: none;
+      /* remove default underline */
+      color: inherit;
+      /* keep text color */
+      transition: color 0.3s ease;
+    }
+
+    /* underline effect */
+    .footer-link a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      /* thickness of underline */
+      background-color: #000;
+      /* change to your footer link color */
+      transition: width 0.4s ease;
+    }
+
+    .footer-link a:hover::after {
+      width: 100%;
+    }
+
 
     @keyframes metallic-shine {
       0% {
@@ -478,7 +505,7 @@ footer .list-unstyled li {
     </div>
   </nav>
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" data-aos="fade-down">
     <div class="hero-content">
       <span class="badge-custom">Our Services</span>
       <h1>Capturing Moments, Creating Memories</h1>
@@ -492,9 +519,9 @@ footer .list-unstyled li {
     </div>
   </section>
 
-  <section class="service-section container">
+  <section class="service-section container" data-aos="fade-up">
     <!-- Wedding Photography -->
-    <div class="row align-items-center service-block">
+    <div class="row align-items-center service-block" data-aos="fade-left">
       <div class="col-md-6">
         <h2 class="service-title">
           <i class="fa-solid fa-camera-retro me-2"></i> Wedding Photography
@@ -512,7 +539,7 @@ footer .list-unstyled li {
     </div>
 
     <!-- Engagement & Pre-Wedding Shoots -->
-    <div class="row align-items-center flex-md-row-reverse service-block">
+    <div class="row align-items-center flex-md-row-reverse service-block" data-aos="fade-right">
       <div class="col-md-6">
         <h2 class="service-title">
           <i class="fa-solid fa-ring me-2"></i> Engagement & Pre-Wedding
@@ -531,7 +558,7 @@ footer .list-unstyled li {
     </div>
 
     <!-- Family & Portrait Photography -->
-    <div class="row align-items-center service-block">
+    <div class="row align-items-center service-block" data-aos="fade-left">
       <div class="col-md-6">
         <h2 class="service-title">
           <i class="fa-solid fa-people-group me-2"></i> Family & Portrait
@@ -549,7 +576,7 @@ footer .list-unstyled li {
     </div>
 
     <!-- Events & Celebrations -->
-    <div class="row align-items-center flex-md-row-reverse service-block">
+    <div class="row align-items-center flex-md-row-reverse service-block" data-aos="fade-right">
       <div class="col-md-6">
         <h2 class="service-title">
           <i class="fa-solid fa-champagne-glasses me-2"></i> Events &
@@ -567,7 +594,7 @@ footer .list-unstyled li {
     </div>
 
     <!-- Corporate & Branding Photography -->
-    <div class="row align-items-center service-block">
+    <div class="row align-items-center service-block" data-aos="fade-left">
       <div class="col-md-6">
         <h2 class="service-title">
           <i class="fa-solid fa-building me-2"></i> Corporate & Branding
@@ -585,7 +612,7 @@ footer .list-unstyled li {
     </div>
 
     <!-- Candid & Creative Shoots -->
-    <div class="row align-items-center flex-md-row-reverse service-block">
+    <div class="row align-items-center flex-md-row-reverse service-block" data-aos="fade-right">
       <div class="col-md-6">
         <h2 class="service-title">
           <i class="fa-solid fa-film me-2"></i> Candid & Creative Shoots
@@ -602,7 +629,7 @@ footer .list-unstyled li {
     </div>
 
     <!-- Travel & Outdoor Photography -->
-    <div class="row align-items-center service-block">
+    <div class="row align-items-center service-block" data-aos="fade-left">
       <div class="col-md-6">
         <h2 class="service-title">
           <i class="fa-solid fa-mountain-sun me-2"></i> Travel & Outdoor
@@ -621,7 +648,7 @@ footer .list-unstyled li {
   </section>
 
   <!-- Why Choose Us Section -->
-  <section class="why-choose-us">
+  <section class="why-choose-us" data-aos="fade-up">
     <div class="container text-center">
       <h2 class="section-title">Why Choose Us?</h2>
       <div class="choose-items text-center">
@@ -645,7 +672,7 @@ footer .list-unstyled li {
     </div>
   </section>
 
-  <section class="cta-section text-center d-flex align-items-center justify-content-center">
+  <section class="cta-section text-center d-flex align-items-center justify-content-center" data-aos="fade-up">
     <div class="container">
       <h2 class="cta-heading mb-3">
         Ready to turn your moments into memories?
@@ -654,8 +681,8 @@ footer .list-unstyled li {
     </div>
   </section>
 
-  <footer class="footer p-4" style="margin-top: 40px;" data-aos="fade-up">
-    <div class="container">
+  <footer class="footer" style="margin-top: 40px;" data-aos="fade-up">
+    <div class="container py-4 px-4">
       <div class="row">
         <div class="col-lg-6 col-md-6 text-center text-md-start">
           <img src="assests/images/Time Line Logo.png" alt="" class="img-fluid" width="90px">
@@ -671,7 +698,7 @@ footer .list-unstyled li {
             <li class="footer-link active-link"><a href="index.html" class="text-uppercase active-link">Home</a></li>
             <li class="footer-link active-link"><a href="service.html" class="text-uppercase">Our Services</a></li>
             <li class="footer-link"><a href="works.html" class="text-uppercase">Our Works</a></li>
-            <li class="footer-link"><a href="gallery.html" class="text-uppercase">Gallery</a></li>
+            <!-- <li class="footer-link"><a href="gallery.html" class="text-uppercase">Gallery</a></li> -->
             <li class="footer-link"><a href="contact.html" class="text-uppercase">Contact Us</a></li>
           </ul>
         </div>
@@ -687,16 +714,14 @@ footer .list-unstyled li {
         </div>
       </div>
 
-      <div class="row mt-5">
-        <div class="col-12 d-flex justify-content-center">
-          <p class="copy">© 2025 Timeline Studios.</span> All rights reserved.</p>
-
-        </div>
-
-      </div>
-
-
     </div>
+
+    
+      <div class="row bg-black text-white py-3">
+  <div class="col-12 d-flex justify-content-center">
+    <p class="copy mb-0">© 2025 Timeline Studios. All rights reserved.</p>
+  </div>
+</div>
 
   </footer>
 
