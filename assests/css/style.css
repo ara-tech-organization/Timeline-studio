@@ -435,7 +435,7 @@ footer .list-unstyled li {
 .info-card:hover,
 .form-card:hover {
   transform: translateY(-5px);
-  border-color: #ffc107;
+  border-color: #fabc37;
   box-shadow: 0 0 20px rgba(255, 193, 7, 0.3);
 }
 
